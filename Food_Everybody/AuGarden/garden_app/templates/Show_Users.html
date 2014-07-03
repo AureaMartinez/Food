@@ -1,0 +1,17 @@
+<html>
+
+<head> <title>Users</title> 
+
+</head>
+
+
+<body> People that love gardens, PUT YOUR HANDS UP: {% for user in all_users %}
+
+	<div><a>{{ user.First_name }} {{user.Last_name}}</a></div>
+	
+
+{% endfor %}
+
+</body>
+
+</html>

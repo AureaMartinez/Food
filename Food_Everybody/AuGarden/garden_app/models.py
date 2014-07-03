@@ -18,6 +18,9 @@ class User(models.Model):
 	#This is how the user is connected to the garden. 
 	Person_ID = models.CharField(max_length=100)
 
+	def __unicode__(self):
+		return self.First_name
+
 class Produce(models.Model):
 	Apples = models.BooleanField()
 	Onions = models.BooleanField()
